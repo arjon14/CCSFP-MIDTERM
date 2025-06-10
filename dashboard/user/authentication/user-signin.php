@@ -59,7 +59,7 @@ if (isset($_POST['btn-signin'])) {
                     $_SESSION['status'] = "No account found";
                     $_SESSION['status_code'] = "error";
                     $_SESSION['status_timer'] = 10000000;
-                    header("Location: ../../../signin");
+                    header("Location: ../../../signin.php");
                     exit();
                 }
             } else if ($_SESSION['property_details'] == NULL) {
@@ -86,7 +86,7 @@ if (isset($_POST['btn-signin'])) {
                     $_SESSION['status'] = "No account found";
                     $_SESSION['status_code'] = "error";
                     $_SESSION['status_timer'] = 10000000;
-                    header("Location: ../../../signin");
+                    header("Location: ../../../signin.php");
                     exit();
                 }
             }
@@ -95,7 +95,7 @@ if (isset($_POST['btn-signin'])) {
             $_SESSION['status'] = "No account found or your account has been removed!";
             $_SESSION['status_code'] = "error";
             $_SESSION['status_timer'] = 10000000;
-            header("Location: ../../../signin");
+            header("Location: ../../../signin.php");
             exit();
         }
     } else {
@@ -103,7 +103,7 @@ if (isset($_POST['btn-signin'])) {
         $_SESSION['status'] = "Invalid captcha, please try again!";
         $_SESSION['status_code'] = "error";
         $_SESSION['status_timer'] = 40000;
-        header("Location: ../../../signin");
+        header("Location: ../../../signin.php");
         exit;
     }
 }
