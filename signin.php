@@ -1,6 +1,5 @@
 <?php
 include_once 'dashboard/user/authentication/user-signin.php';
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,7 +62,7 @@ include_once 'dashboard/user/authentication/user-signin.php';
                             <li><a href="<?php echo $config->getSystemInstagram() ?>"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                         <div class="sign-box">
-                            <a href="signin"><i class="fas fa-user"></i>Sign In</a>
+                            <a href="signin.php"><i class="fas fa-user"></i>Sign In</a>
                         </div>
                     </div>
                 </div>
@@ -178,7 +177,7 @@ include_once 'dashboard/user/authentication/user-signin.php';
                                 <div class="tab active-tab" id="tab-1">
                                     <div class="inner-box">
                                         <h4>Sign in</h4>
-                                        <form action="dashboard/user/authentication/user-signin.php" method="post" novalidate class="default-form needs-validation">
+                                        <form action="dashboard/user/authentication/user-signin.php" method="POST" novalidate class="default-form needs-validation">
                                             <input type="hidden" id="g-token" name="g-token">    
                                             <div class="form-group">
                                                 <label>Email address</label>
@@ -206,7 +205,7 @@ include_once 'dashboard/user/authentication/user-signin.php';
                                 <div class="tab" id="tab-2">
                                     <div class="inner-box">
                                         <h4>User Sign Up</h4>
-                                        <form action="dashboard/user/authentication/user-signup.php" method="post" class="default-form needs-validation" novalidate>
+                                        <form action="dashboard/user/authentication/user-signup.php" method="POST" class="default-form needs-validation" novalidate>
                                             <div class="form-group">
                                                 <label>First Name <span style="font-size:17px; margin-top: 2rem; color:red; opacity:0.8;">*</span></label>
                                                 <input type="text" class="form-control" onkeyup="this.value = this.value.toUpperCase();" name="first_name" required="">

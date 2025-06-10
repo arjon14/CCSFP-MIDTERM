@@ -1,5 +1,5 @@
 <?php
-include_once '../../../configuration/settings-configuration.php';
+include_once 'configuration/settings-configuration.php';
 require_once 'user-class.php';
 
 //URL

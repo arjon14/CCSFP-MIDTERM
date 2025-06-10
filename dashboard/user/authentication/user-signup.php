@@ -2,6 +2,7 @@
 include_once '../../../configuration/settings-configuration.php';
 include_once __DIR__ . '/../../../database/dbconfig.php';
 require_once 'user-class.php';
+include_once '/../../signin.php';
 
 class UserController
 {
